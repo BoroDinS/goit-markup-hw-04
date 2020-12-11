@@ -226,6 +226,22 @@ img {
   padding: 94px 0;
 }
 
+.thumb {
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.advantages__icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 4px;
+}
+
 .advantages__list {
   display: flex;
 }
