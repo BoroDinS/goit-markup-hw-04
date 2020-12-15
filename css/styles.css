@@ -175,6 +175,22 @@ img {
   padding-bottom: 200px;
 }
 
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #333333;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero/Hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .hero__title {
   margin-bottom: 30px;
   padding-left: 150px;
@@ -187,7 +203,7 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  /* color: #FFFFFF; */
+  color: #ffffff;
 }
 
 .btn__hero {
@@ -303,6 +319,7 @@ img {
 .our__team {
   padding-top: 98px;
   padding-bottom: 90px;
+  background-color: #f5f4fa;
 }
 
 .members__list {
@@ -342,6 +359,32 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+.social__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social__list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.social__list-link:hover .icon__social-link,
+.social__list-link:focus .icon__social-link {
+  fill: var(--accent-color);
+}
+
+.icon__social-link {
+  width: 20px;
+  height: 20px;
+  fill: rgba(175, 177, 184, 1);
 }
 
 /* ============= OUR TEAM SECTION END ============= */
