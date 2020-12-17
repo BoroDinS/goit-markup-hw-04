@@ -328,7 +328,8 @@ img {
 
 .members__list-item {
   width: (100% - 30px * 3) / 4;
-  padding-top: 50px;
+  margin-top: 50px;
+  background-color: #ffffff;
 }
 
 .members__list-item:not(:last-child) {
@@ -336,7 +337,9 @@ img {
 }
 
 .text__container {
-  padding: 30px 59px;
+  padding-top: 30px;
+  padding-left: 59px;
+  padding-right: 59px;
 }
 
 .team__member {
@@ -364,6 +367,10 @@ img {
 .social__list {
   display: flex;
   justify-content: space-between;
+  margin-top: 16px;
+  padding-bottom: 30px;
+  padding-right: 32px;
+  padding-left: 32px;
 }
 
 .social__list-link {
@@ -378,7 +385,12 @@ img {
 
 .social__list-link:hover .icon__social-link,
 .social__list-link:focus .icon__social-link {
-  fill: var(--accent-color);
+  fill: #ffffff;
+}
+
+.social__list-link:hover,
+.social__list-link:focus {
+  background-color: var(--accent-color);
 }
 
 .icon__social-link {
@@ -389,15 +401,44 @@ img {
 
 /* ============= OUR TEAM SECTION END ============= */
 
+/* ============= CCLIENTS ============= */
+
+.our__clients {
+  padding: 94px 0;
+}
+
+.clients__list {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 170px;
+  height: 90px;
+  border: 1px solid rgba(175, 177, 184, 1);
+}
+
+/* =========== CCLIENTS END =========== */
+
 /* ============= FOOTER ============= */
 
 .footer {
   padding: 60px 0;
+  background-color: #2f303a;
 }
 
-/* .logo__footer > .logo__studio {
+.footer .container {
+  display: flex;
+}
+
+.logo__footer > .logo__studio {
   color: #ffffff;
-} */
+}
 
 .address__footer-item:not(:last-child) {
   margin-bottom: 9px;
@@ -413,7 +454,7 @@ img {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  /* color: #ffffff; */
+  color: #ffffff;
 }
 
 .contact__mail-footer {
@@ -422,7 +463,7 @@ img {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  /* color: rgba(255, 255, 255, 0.6); */
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .contact__tel-footer {
@@ -431,7 +472,43 @@ img {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  /* color: rgba(255, 255, 255, 0.6); */
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.join__us-text {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.join__us .social__list {
+  padding-left: 0;
+}
+
+.join__us {
+  padding-top: 12px;
+  margin-left: 70px;
+}
+
+.join__us .social__list-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.join__us .icon__social-link {
+  fill: #ffffff;
+}
+
+.join__us .social__list-link:hover,
+.join__us .social__list-link:focus {
+  background-color: var(--accent-color);
+}
+
+.join__us .social__list-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 /* ============= FOOTER END ============= */
