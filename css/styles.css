@@ -112,6 +112,7 @@ img {
 .header__contakt-info {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .contact__mail-header {
@@ -142,6 +143,26 @@ img {
 .contact__tel-header:hover,
 .contact__tel-header:focus {
   color: var(--accent-color);
+}
+
+.contact__icon:hover .contact__mail-header,
+.contact__icon:focus .contact__mail-header {
+  color: var(--accent-color);
+}
+
+.contact__icon:hover .contact__tel-header,
+.contact__icon:focus .contact__tel-header {
+  color: var(--accent-color);
+}
+
+.contact__icon:hover {
+  fill: var(--accent-color);
+}
+
+.contact__icon {
+  margin-right: 10px;
+
+  fill: #757575;
 }
 
 .contact__mail-header {
@@ -401,29 +422,44 @@ img {
 
 /* ============= OUR TEAM SECTION END ============= */
 
-/* ============= CCLIENTS ============= */
+/* ============= CLIENTS ============= */
 
 .our__clients {
   padding: 94px 0;
 }
 
 .clients__list {
-  margin-top: 50px;
   display: flex;
   justify-content: space-between;
+  margin-top: 50px;
 }
 
 .clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 170px;
   height: 90px;
-  border: 1px solid rgba(175, 177, 184, 1);
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
-/* =========== CCLIENTS END =========== */
+.clients__icon {
+  fill: rgba(175, 177, 184, 1);
+}
+
+.clients__link:hover .clients__icon,
+.clients__link:focus .clients__icon {
+  fill: var(--accent-color);
+}
+
+.clients__link:hover,
+.clients__link:focus {
+  border: 1px solid var(--accent-color);
+}
+
+/* =========== CLIENTS END =========== */
 
 /* ============= FOOTER ============= */
 
