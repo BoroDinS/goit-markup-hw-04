@@ -572,12 +572,17 @@ img {
 }
 
 .projects__list-item {
+  display: block;
   width: (100% - 30px * 2) / 3;
   margin-bottom: 30px;
 }
 
+.project__link {
+  display: block;
+}
+
 .projects__list-item:hover,
-.projects__list-item:focus {
+.project__link:focus li.projects__list-item {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
