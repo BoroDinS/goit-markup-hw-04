@@ -118,20 +118,6 @@ img {
   margin-right: 50px;
 }
 
-.header__contakt-info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.contact__mail-header {
-  margin-right: 50px;
-}
-
-.address {
-  margin-left: auto;
-}
-
 .navigation__list-item {
   font-family: var(--main-font);
   font-weight: 500;
@@ -145,6 +131,36 @@ img {
   color: var(--accent-color);
 }
 
+.address {
+  margin-left: auto;
+}
+
+.header__contakt-info {
+  display: flex;
+}
+
+.contact__mail-header,
+.contact__tel-header {
+  display: flex;
+  align-items: center;
+}
+
+.contact__mail-header {
+  margin-right: 50px;
+}
+
+.mail__icon,
+.tel__icon {
+  margin-right: 10px;
+}
+
+.contact__icon {
+  display: flex;
+  align-items: center;
+
+  fill: #757575;
+}
+
 .navigation__list-item:hover,
 .navigation__list-item:focus,
 .contact__mail-header:hover,
@@ -154,33 +170,8 @@ img {
   color: var(--accent-color);
 }
 
-.contact__icon:hover .contact__mail-header,
-.contact__icon:focus .contact__mail-header {
-  color: var(--accent-color);
-}
-
-.contact__icon:hover .contact__tel-header,
-.contact__icon:focus .contact__tel-header {
-  color: var(--accent-color);
-}
-
 .contact__icon:hover {
   fill: var(--accent-color);
-}
-
-.contact__icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  fill: #757575;
-}
-
-.icon__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 10px;
 }
 
 /* ============= HEADER END ============= */
@@ -581,8 +572,14 @@ img {
   display: block;
 }
 
-.projects__list-item:hover,
+/* .projects__list-item:hover,
 .project__link:focus li.projects__list-item {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+} */
+
+.projects__list-item:hover,
+.project__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -614,8 +611,8 @@ img {
 .btn__portfolio:focus {
   color: #ffffff;
   background-color: var(--accent-color);
-  /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12); */
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
 
